@@ -1,0 +1,48 @@
+/* pages/index/index.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.test-bg {
+  position: fixed;
+  bottom: 0;
+}
+
+.screen {
+  position: fixed;
+  color: #000000;
+  font-size: 30px;
+  bottom: 780rpx;
+  text-align: right;
+  width: 730rpx;
+  word-wrap: break-word;
+}
+
+.btnGroup {
+  display: flex; /*弹性显示结构*/
+  flex-direction: row;/*横向显示*/
+}
+
+.item {
+  width: 192rpx;
+  line-height: 148rpx;
+  border-radius: 5%;
+  text-align: center;
+}
+
+.pink {
+  /* 前景色 */
+  color: #000000;
+  border: solid 1rpx #ffffff;
+  /* 背景色 */
+  background: #99ffc0;
+}
+
+.pink1 {
+  /* 前景色 */
+  color: #000000;
+  border: solid 1rpx #ffffff;
+  /* 背景色 */
+  background: #2eeb76;
+}

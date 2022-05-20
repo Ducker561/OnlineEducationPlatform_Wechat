@@ -1,0 +1,29 @@
+<!-- 用户登录 -->
+<view class='login'>
+    <image src='../../image/login.jpg' class='login-bg'></image>
+    <view class='login-wrap'>
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <view class='title'>登录</view>
+            <view class='inp'>
+                <input type="text" name="username" value="{{username}}" placeholder="请输入账号" />
+            </view>
+            <view class='inp'>
+                <input class="inputText" type="password" name="password" value="{{password}}" password="true" placeholder="请输入密码" />
+            </view>
+            <view class='login-btn'>
+                <button class="btn1" type="primary" size="mini" form-type='submit'>
+                    登录
+                </button>
+                <button class='btn2' size='mini' bindtap="goToRegist">注册</button>
+            </view>
+        </form>
+        <view class='password-info'>
+            <checkbox-group class="rember">
+                <label>
+                    <checkbox value='请记住用户名' />
+                    请记住用户名
+                </label>
+            </checkbox-group>
+        </view>
+    </view>
+</view>

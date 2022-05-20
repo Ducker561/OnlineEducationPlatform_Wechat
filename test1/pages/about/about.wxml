@@ -1,0 +1,44 @@
+<!-- 联系我们 -->
+<view class="page-phone">
+   <view class="header">
+      <view class="wx-title">培训机构</view>
+      <view class="wx-desc">专业技能提升</view>
+      <image src="{{logosrc}}" class="logoimg"></image>
+   </view>
+   <view class="content">
+      <view class="wx-cell">
+         <view class="icon">
+            <image src="{{adrimg}}" class="icon-postion"></image>
+         </view>
+         <view class="cell-bd" bindtap="getLocation">苏州科技大学</view>
+      </view>
+      <view class="wx-cell">
+         <view class="icon">
+            <image src="{{clockimg}}" class="icon-postion"></image>
+         </view>
+         <view class="cell-bd">9：00 - 18：00</view>
+      </view>
+      <view class="wx-cell" bindtap="calling">
+         <view class="icon">
+            <image src="{{phoneimg}}" class="icon-postion"></image>
+         </view>
+         <view class="cell-bd">18112578680</view>
+         <view class="cell-fd">
+            <image src="{{jtimg}}" class="icon-postion"></image>
+         </view>
+      </view>
+   </view>
+   <view class="content">
+      <view class="wx-cell">
+         <view class="icon">
+            <image src="{{picimg}}" class="icon-postion"></image>
+         </view>
+         <view class="cell-bd">简介</view>
+         <view>
+            <text class="jianjie">
+               培训机构是中国的职业教育机构，成立于2003年3月，致力于提高学员职场竞争力。培训机构的培训课程和服务范围，从职业资格认证、技能培训，到与职业相关的就业服务，业务覆盖全国多个城市，服务全国学员。培训机构标准化的课程体系，是培训机构职业培训的模板。
+            </text>
+         </view>
+      </view>
+   </view>
+</view>

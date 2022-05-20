@@ -1,0 +1,37 @@
+<view class="page">
+    <view class="page__hd">用户注册</view>
+    <form bindsubmit="formSubmit">
+        <view class="page__bd">
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">用户名:</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" placeholder="请填写用户名" name="username" />
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">密码:</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" placeholder="请填写密码" type="password" name="password" />
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">确认密码:</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" placeholder="请填写相同的密码" type="password" name="password2" />
+                    </view>
+                </view>
+                <view class="btn">
+                    <button class="weui-btn" type="primary" form-type="submit">注册</button>
+                    <button class="weui-btn" type="primary" form-type="reset">重置</button>
+                </view>
+            </view>
+        </view>
+    </form>
+</view>

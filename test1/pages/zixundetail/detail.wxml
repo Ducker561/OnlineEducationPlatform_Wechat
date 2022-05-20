@@ -1,0 +1,39 @@
+<!-- 资讯详情 -->
+<view class="container">
+    <view class="top_bg">
+        <image class="wrapper" src="{{zixun.detailimg}}" />
+        <view class="bg_word">
+            <text class="fi">{{zixun.fi}}</text>
+            <view class="se">{{zixun.name}}</view>
+        </view>
+    </view>
+    <view class="personInfo">
+        <image src="/image/photo.png" mode="widthFix" style="width:18%" />
+        <view>
+            <view>{{zixun.teacher}}</view>
+            <view class="a">{{zixun.teachercollege}}</view>
+            <view class="a">{{zixun.chenghao}}</view>
+        </view>
+    </view>
+    <view class="content">
+        <view class="title">
+            <image src="/image/read.png" mode="widthFix" style="width:7%" />
+            <text>主讲内容</text>
+        </view>
+        <text class="content1">{{zixun.text1}}</text>
+    </view>
+    <view class="content">
+        <view class="title">
+            <image src="/image/read.png" mode="widthFix" style="width:7%" />
+            <text>可掌握的核心能力</text>
+        </view>
+        <text class="content1">{{zixun.text2}}</text>
+    </view>
+    <view class="content">
+        <view class="title">
+            <image src="/image/read.png" mode="widthFix" style="width:7%" />
+            <text>可解决的现实问题</text>
+        </view>
+        <text class="content1">{{zixun.text3}}</text>
+    </view>
+</view>

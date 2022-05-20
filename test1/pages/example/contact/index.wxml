@@ -1,0 +1,27 @@
+<!-- 联系我们 -->
+<view class="main">
+    <view class="banner">
+        <image src="/image/list.png" mode="aspectFill"></image>
+    </view>
+    <view class="mcname">IT教育培训机构</view>
+    <view class="mcinfo">
+        <text class="mctlt">客服电话：</text>
+        <text class="mcval">012-888888</text>
+    </view>
+    <view class="mcinfo" open-type="contact">
+        <text class="mctlt">客服微信：</text>
+        <text class="mcval">1234</text>
+    </view>
+    <view class="mcinfo">
+        <text class="mctlt">机构邮箱：</text>
+        <text class="mcval">123456789@yeah.net</text>
+    </view>
+    <view class="mcinfo">
+        <text class="mctlt">客服时间：</text>
+        <text class="mcval">8:00~18:00</text>
+    </view>
+    <view class="mcinfo" bindtap="click">
+        <text class="mctlt">机构地址：</text>
+        <text class="mcval">苏州</text>
+    </view>
+</view>

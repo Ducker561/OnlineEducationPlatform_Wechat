@@ -1,0 +1,30 @@
+<!-- 首页管理导航 -->
+<view>
+  <view class="info">{{message1}}</view>
+  <view class="container">
+    <view class="weui-grids">
+      <view class="weui-grid" wx:for="{{routers}}" wx:key="name">
+        <navigator url="{{item.url}}">
+          <view class="weui-grid__icon">
+            <image src=" {{item.icon}}" mode="scaleToFill" />
+          </view>
+          <text class="weui-grid__label">{{item.name}}</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="info">{{message2}}</view>
+  <view class="container">
+    <view class="weui-grids">
+      <view class="weui-grid" wx:for="{{routers2}}" wx:key="name">
+        <navigator url="{{item.url}}">
+          <view class="weui-grid__icon">
+            <image src=" {{item.icon}}" mode="scaleToFill" />
+          </view>
+          <text class="weui-grid__label">{{item.name}}</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

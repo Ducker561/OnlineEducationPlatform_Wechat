@@ -1,0 +1,42 @@
+<!--pages/index/search.wxml-->
+<view class=" search-top cu-bar search">
+  <view class="search-form round">
+    <text class="icon-search"></text>
+    <input type="text" placeholder="搜索字词" confirm-type="search" focus="true"
+     bindinput='onSearchBarChange' value='{{inputText}}' bindconfirm='onSearchButtonTap'></input>
+  </view>
+  <view class="search-button">
+    <button class="cu-btn bg-brown shadow-blur round" bindtap="onSearchButtonTap">搜索</button>
+  </view>
+</view>
+<view class='search-bottom'>
+  <!-- 联想数据 -->
+  <!-- <view class="cu-list menu search-hint" wx:if="{{inputText.length > 0}}">
+    <view class="cu-item" wx:for="{{searchHintList}}" wx:key bindtap="onPressHint" data-index="{{index}}">
+      <view class="content">
+        <text class="text-black">{{item}}</text>
+      </view>
+    </view>
+  </view> -->
+  <!-- 历史数据 -->
+  <view class="cu-list menu search-history">
+    <view class="cu-item history-list" wx:for="{{searchHistoryList}}" wx:key>
+      <view class="content" bindtap="onPressHistory" data-index="{{index}}">
+        <text class="text-black">{{item}}</text>
+      </view>
+      <text id="{{index}}"class="icon-close text-grey" bindtap="onDeleteTap"></text>
+    </view>
+    <view class='cu-item history-bottom' wx:if="{{searchHistoryList.length > 0}}">
+      <view class='content' bindtap='onDeleteAllTap'>
+        <text class='icon-delete text-grey'></text>
+        <text>删除全部历史数据</text>
+      </view>
+    </view>
+    <view class="cu-item history-bottom" wx:else="{{searchHistoryList.length == 0}}">
+      <view class='content'>
+        <text class='icon-sort text-grey history-icon'></text>
+        <text>暂无历史数据</text>
+      </view>
+    </view> 
+  </view>
+</view>

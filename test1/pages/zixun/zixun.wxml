@@ -1,0 +1,15 @@
+<!-- 资讯标签卡 -->
+<view class="container">
+    <view class="course_detail">
+        <image class="course_wrapper" src="{{zixun.img}}" />
+        <text class="publish">{{zixun.name}}</text>
+        <view class="course_title">{{zixun.title}}</view>
+        <view class="course_title">{{zixun.title2}}</view>
+        <view class="btn_box">
+            <navigator url="/pages/zixundetail/detail?id={{zixun.id}}" hover-class="navigator-hover" class="con-item">
+                <view class="btn learn_btn">资讯详情</view>
+            </navigator>
+            <!-- <view class="btn card_btn">参加课程</view> -->
+        </view>
+    </view>
+</view>

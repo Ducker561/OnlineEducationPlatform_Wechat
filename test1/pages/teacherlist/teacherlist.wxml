@@ -1,0 +1,28 @@
+<view class="content">
+  <view class="top">
+    <view class="top-tr">
+      <image src="{{teacher.image}}" class="top-trimg"></image>
+    </view>
+    <view class="top-info">
+      <view class="toin-name">{{teacher.name}}</view>
+      <view class="toin-info">{{teacher.level}}</view>
+    </view>
+  </view>
+  <view class="clear"></view>
+  <view class="info">
+    <view class="in-title">学历</view>
+    <view class="in-info">{{teacher.degree}}</view>
+  </view>
+  <view class="clear"></view>
+  <view class="info">
+    <view class="in-title">个人简介</view>
+    <view class="in-info">
+      {{teacher.style}}
+    </view>
+  </view>
+  <view class="clear"></view>
+   <view class="info">
+    <view class="in-title">个人经历</view>
+    <view class="in-info">{{teacher.jingli}}</view>
+  </view>
+</view>

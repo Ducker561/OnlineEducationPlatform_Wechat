@@ -1,0 +1,47 @@
+.con-teacher {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 320rpx;
+  border: 2rpx solid #eeeeee;
+  padding: 10rpx 10rpx;
+  margin: 10rpx auto;
+}
+
+.con-trimg {
+  width: 240rpx;
+  height: 260rpx;
+  margin: 10rpx 20rpx;
+}
+
+.con-info {
+  margin: 15rpx 20rpx;
+  overflow: hidden;
+  font-size: 32rpx;
+  font-family: "微软雅黑";
+  color: #606060;
+}
+
+.coin-info {
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+
+.utitle {
+  width: 100%;
+  height: 90rpx;
+  text-align: center;
+  background: #fff;
+}
+
+.mtitle {
+  font-size: 35rpx;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10rpx;
+}
+
+.ztitle {
+  font-size: 30rpx;
+  color: #999
+}

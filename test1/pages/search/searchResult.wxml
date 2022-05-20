@@ -1,0 +1,37 @@
+<!--pages/index/searchResult.wxml-->
+<view class='content' wx:if="{{valid}}">
+  <view class="top">
+    <view class='word-intro'>
+      <image class='matts' src='../../image/matts.png' mode='scaleToFill'></image>
+      <view class='word'>{{word}}</view>
+      <view class='pronunciation'>
+        <text style='font-weight:bold;'>读音</text>
+        <view class="pronList">
+          <text wx:key wx:for="{{pronList}}">
+            {{item}}
+          </text>
+        </view>
+      </view>
+    </view>
+    <view>
+        <text class="favor {{isLike?'icon-favorfill':'icon-favor'}}" bindtap="clickFavor"></text>
+        <text class="share icon-upload" bindtap="clickFavor"></text>
+      </view>
+  </view>
+  <view class='word-explaination' wx:key wx:for="{{explaination}}" wx:for-item="item">
+    <view class='one-explaination'>
+      <view class='word-tag cu-tag bg-red round'>实词</view>
+      <view style='margin-right:10rpx'>{{item.sense}}</view>
+      <view style='margin-right:10rpx'> ( {{item.pronunciation}} ) </view>
+    </view>
+    <view wx:for="{{item.sentence}}" wx:for-item="sent" wx:for-index="index" wx:key>
+      <text class='text-black'>{{sent}}</text>
+      <view class='sentence'>
+        <view class='text-black text-bold'> —— {{item.source[index]}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="blank" wx:else>
+  抱歉，暂无该词的数据
+</view>

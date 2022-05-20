@@ -1,0 +1,84 @@
+<view class="content">
+    <view class="tabs">
+        <view class="{{currentTab==0?'select':'default'}}" data-current="0" bindtap="switchNav">
+            学员信息
+        </view>
+        <view class="{{currentTab==1?'select':'default'}}" data-current="1" bindtap="switchNav">
+            讲师信息
+        </view>
+    </view>
+    <swiper current="{{currentTab}}" style="height:{{winHeight}}px">
+        <swiper-item>
+            <view>
+                <scroll-view scroll-x="true" class="scrollClass">
+                    <view class="table">
+                        <view class="table_header">
+                            <block wx:for="{{headerArray}}" wx:key="{{text}}">
+                                <view class="th">
+                                    <view class="centerclass cell_label">{{item.text}}</view>
+                                </view>
+                            </block>
+                        </view>
+                        <block wx:for="{{studentlist}}" wx:key="{{userid}}" class="rowblock">
+                            <view class="data">
+                                <view class="th">
+                                    <view class="centerclass cell_label">{{item.userid}}</view>
+                                </view>
+                                <view class="th">
+                                    <view class="centerclass cell_label">{{item.username}}</view>
+                                </view>
+                                <view class="th">
+                                    <view class="centerclass cell_label">{{item.sex}}</view>
+                                </view>
+                                <view class="th">
+                                    <view class="centerclass cell_label">{{item.birthyear}}</view>
+                                </view>
+                                <view class="th">
+                                    <view class="centerclass cell_label">{{item.grade}}</view>
+                                </view>
+                            </view>
+                        </block>
+                    </view>
+                </scroll-view>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view scroll-x="true" class="scrollClass">
+                <view class="table">
+                    <view class="table_header">
+                        <block wx:for="{{headerArray2}}" wx:key="{{text}}">
+                            <view class="th">
+                                <view class="centerclass cell_label">{{item.text}}</view>
+                            </view>
+                        </block>
+                    </view>
+                    <block wx:for="{{teacherlist}}" wx:key="{{userid}}" class="rowblock">
+                        <view class="data">
+                            <view class="th">
+                                <view class="centerclass cell_label">{{item.userid}}</view>
+                            </view>
+                            <view class="th">
+                                <view class="centerclass cell_label">{{item.username}}</view>
+                            </view>
+                            <view class="th">
+                                <view class="centerclass cell_label">{{item.sex}}</view>
+                            </view>
+                            <view class="th">
+                                <view class="centerclass cell_label">{{item.birthyear}}</view>
+                            </view>
+                            <view class="th">
+                                <view class="centerclass cell_label">{{item.degree}}</view>
+                            </view>
+                            <view class="th">
+                                <view class="centerclass cell_label">{{item.title}}</view>
+                            </view>
+                            <view class="th">
+                                <view class="centerclass cell_label">{{item.grade}}</view>
+                            </view>
+                        </view>
+                    </block>
+                </view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

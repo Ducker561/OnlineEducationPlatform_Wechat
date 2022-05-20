@@ -1,0 +1,19 @@
+<!-- 资讯页面 -->
+<view class="content">
+    <navigator url="/pages/zixun/zixun?id={{zixun[0].id}}" hover-class="navigator-hover" class="con-item">
+        <image src="{{zixun[0].img}}" class="actionpic"></image>
+        <view class="clear"></view>
+    </navigator>
+    <navigator  url="/pages/zixun/zixun?id={{zixun[1].id}}" hover-class="navigator-hover" class="con-item">
+        <image src="{{zixun[1].img}}" class="actionpic"></image>
+        <view class="clear"></view>
+    </navigator>
+    <navigator  url="/pages/zixun/zixun?id={{zixun[2].id}}" hover-class="navigator-hover" class="con-item">
+        <image src="{{zixun[2].img}}" class="actionpic"></image>
+        <view class="clear"></view>
+    </navigator>
+    <navigator url="/pages/zixun/zixun?id={{zixun[3].id}}" hover-class="navigator-hover" class="con-item">
+        <image src="{{zixun[3].img}}" class="actionpic"></image>
+        <view class="clear"></view>
+    </navigator>
+</view>

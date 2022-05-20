@@ -1,0 +1,120 @@
+<!-- 培训机构首页 -->
+<view class="content">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  
+  <view class="item">
+
+    <view class="unav">
+      <block wx:for="{{navs}}" wx:key="item.id"> 
+        <!-- 在index.js里面可以查看navs -->
+        <view id="tapTest" class="navlist" data-hi="{{item.url}}" bindtap="gotopage">
+          <view class="navthumb">
+            <image src="{{item.image}}" mode="scaleToFill"></image>
+          </view>
+          <view class="navname">{{item.text}}</view>
+        </view>
+      </block>
+      
+    </view>
+  </view>
+
+
+  <!-- 通讯内容 -->
+  <!-- <view class="item">
+    <view class="jianjie">
+      <view class="icon">
+        <image src="{{school}}" class="icon-postion"></image>
+      </view>
+      <view class="cell-bd"><text>IT培训机构</text></view>
+    </view>
+    <view class="jianjie">
+      <view class="icon">
+        <image src="{{indextel}}" class="icon-postion"></image>
+      </view>
+      <view class="cell-tel">012-888888</view>
+    </view>
+    <view class="jianjie">
+      <view class="icon">
+        <image src="{{weizhi}}" class="icon-postion"></image>
+      </view>
+      <view class="cell-tel">苏州市虎丘区苏州科技大学</view>
+    </view>
+  </view>
+  <view class="line"></view> -->
+
+<!-- 课内课程 -->
+<view class="block">
+<view class="utitle">
+    <view class="mtitle">课内课程</view>
+    <view class="ztitle">In-class courses</view>
+  </view>
+  <view class="introduct">
+    <view class="inner">
+      <navigator class="pleft" url="/pages/detail/index?id={{courses[0].id}}">
+        <image src="{{courses[0].adthumb}}" mode="scaleToFill"></image>
+      </navigator>
+      <view class="pright">
+        <navigator class="psmall" url="/pages/detail/index?id={{courses[1].id}}">
+          <image src="{{courses[1].adthumb}}" mode="scaleToFill"></image>
+        </navigator>
+        <view class="ubom10rpx"></view>
+        <navigator class="psmall" url="/pages/detail/index?id={{courses[2].id}}">
+          <image src="{{courses[2].adthumb}}" mode="scaleToFill"></image>
+        </navigator>
+      </view>
+    </view>
+  </view> 
+</view> 
+
+  <!-- 兴趣课程 -->
+  <view class="block">
+  <view class="utitle">
+    <view class="mtitle">兴趣课程</view>
+    <view class="ztitle">Interest Courses</view>
+  </view>
+  <view class="introduct">
+    <view class="inner">
+      <navigator class="pleft" url="/pages/detail/index?id={{courses[0].id}}">
+        <image src="{{courses[0].adthumb}}" mode="scaleToFill"></image>
+      </navigator>
+      <view class="pright">
+        <navigator class="psmall" url="/pages/detail/index?id={{courses[1].id}}">
+          <image src="{{courses[1].adthumb}}" mode="scaleToFill"></image>
+        </navigator>
+        <view class="ubom10rpx"></view>
+        <navigator class="psmall" url="/pages/detail/index?id={{courses[2].id}}">
+          <image src="{{courses[2].adthumb}}" mode="scaleToFill"></image>
+        </navigator>
+      </view>
+    </view>
+  </view> 
+</view> 
+
+  <!-- 教学环境 -->
+  <view class="block">
+    <view class="utitle">
+      <view class="mtitle">教学环境</view>
+      <view class="ztitle">Environment</view>
+    </view>
+    <view class="photo"> 
+      <!-- <scroll-view scroll-x="true"> -->
+      <view class="item" wx:for="{{photos}}" wx:key="">
+        <image src="{{item}}" />
+      </view> 
+      <!-- </scroll-view> -->
+    </view>
+  </view> 
+
+  <view class="line"></view>
+  <view class="jszc">亲，我是有底线的噢~</view>
+  <view class="telicon" bindtap="calling">
+    <image src="/image/tel.png"></image>
+  </view>
+</view> 

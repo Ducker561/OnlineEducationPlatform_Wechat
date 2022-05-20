@@ -1,0 +1,78 @@
+page{
+    background-color: #fff;
+}
+.container{
+    padding:0;
+}
+.placeholder{
+    height: 1.5em;
+    background-color: #7fabfd;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    left:0;
+    top:0;
+  }
+.page_title .info{
+    line-height: 2.5em;
+}
+.top_bg{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    width: 100%;
+}
+.bg_word{
+    transform:translateY(-150px);
+    width: 90%;
+    padding: 1.5em;
+}
+.fi{
+    color: white;
+    line-height: 1.5em;
+}
+.se{
+    font-size: 15px;
+    color: white;
+    line-height: 4em;
+}
+.personInfo{
+    width: 85%;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding-bottom: 0.8em;
+    background: #fff;
+    box-shadow: 2px 5px 30px #d1d1d1;
+    transform: translateY(-230px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.personInfo image{
+    padding:2em;
+}
+.a{
+    font-size: 15px;
+    line-height: 1.8em;
+}
+.content{
+    transform: translateY(-220px);
+    width: 90%;
+    padding: 1em;   
+}
+.content .title{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin:1em 0;
+    padding-bottom:0.5em;
+    border-bottom: 2px solid #333333; 
+}
+.content image{
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 0.5em; 
+}

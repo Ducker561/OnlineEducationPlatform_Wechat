@@ -1,0 +1,73 @@
+<view class="head">课程名单管理</view>
+<scroll-view scroll-x="true" class="scrollClass">
+    <view class="table">
+        <view class="table_header">
+            <block wx:for="{{headerArray}}" wx:key="{{text}}">
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.text}}</view>
+                </view>
+            </block>
+        </view>
+        <block wx:for="{{courselist}}" wx:key="{{courseid}}" class="rowblock">
+            <view class="data" wx:if="{{index % 2 == 0}}">
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.courseid}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.coursename}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.teacherid}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.coursetime}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.classroom}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.courseweek}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.coursetype}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.score}}</view>
+                </view>
+                <view class="th_edit">
+                    <navigator url="../editform/editform?courseid={{item.courseid}}">修改</navigator>
+                </view>
+            </view>
+            <!-- 隔行换色 -->
+            <view class="data bg_g" wx:else>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.courseid}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.coursename}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.teacherid}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.coursetime}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.classroom}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.courseweek}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.coursetype}}</view>
+                </view>
+                <view class="th">
+                    <view class="centerclass cell_label">{{item.score}}</view>
+                </view>
+                <view class="th_edit">
+                    <navigator url="../editform/editform?courseid={{item.courseid}}">修改</navigator>
+                </view>
+            </view>
+        </block>
+    </view>
+</scroll-view>

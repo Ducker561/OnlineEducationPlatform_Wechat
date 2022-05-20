@@ -1,0 +1,345 @@
+/**index.wxss**/
+
+.slide-image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.line {
+  height: 25rpx;
+  background: #eee;
+}
+
+.index-card{
+  margin-top: 20rpx;
+}
+
+.app-title {
+  font-size: 36rpx;
+  font-family: '微软雅黑';
+  border-left: 10rpx solid #4ec4c8;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  text-indent: 15rpx;
+}
+
+.mod-item {
+  width: 46%;
+  height: 300rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+  position: relative;
+}
+
+.mod-signup {
+  position: absolute;
+}
+
+.mod-signup image {
+  width: 76rpx;
+  height: 42rpx;
+}
+
+.mod-img {
+  width: 100%;
+  height: 180rpx;
+}
+
+.mod-image {
+  width: 100%;
+  height: 180rpx;
+}
+
+.mod-title {
+  font-size: 32rpx;
+  font-family: '微软雅黑';
+  display: flex;
+  height: 45rpx;
+  margin-top: 15rpx;
+  flex-direction: column;
+  justify-content: center;
+  text-overflow: -o-ellipsis-lastline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.mod-info {
+  display: flex;
+  flex-direction: column;
+  height: 40rpx;
+}
+
+.mod-icon {
+  display: flex;
+  flex-direction: row;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.cell-bd {
+  font-size: 32rpx;
+  font-family: '宋体';
+  padding-left: 8px;
+  letter-spacing:5rpx;
+}
+
+.cell-tel{
+  font-size: 28rpx;
+  font-family: '宋体';
+  padding-left: 8px;
+  color: #aaa;
+  letter-spacing:3rpx;
+}
+
+.moinfont {
+  font-size: 28rpx;
+  text-indent: 60rpx;
+  font-family: '微软雅黑';
+  color: #bfbfbf;
+}
+
+.icon-jt {
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  right: 0rpx;
+  top: 18rpx;
+}
+.grid_line{
+  display: flex;
+  flex-direction: row;
+	width:100%;
+	margin-left: 40rpx auto;
+	margin-right: 40rpx auto;
+}
+
+
+.grid_line .grid_item{
+	margin-left:20rpx;
+	margin-top:20rpx;
+	width:345rpx;
+	height:220rpx;
+}
+
+.grid_line .grid_item_top{
+	background-color:  rgb(211, 147, 200);
+}
+
+.grid_line .grid_item_bottom{
+	background-color: rgb(211, 147, 200);
+}
+
+ .grid_item .grid_icon{
+	margin-top: 40rpx;
+	height:80rpx;
+	width:80rpx;
+}
+
+ .grid_item .grid_label{
+	margin-top:20rpx;
+	font-weight: bold;
+}
+
+.icon-postion{
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.iconjtimg {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.clear {
+  display: flex;
+  flex-direction: column;
+  height: 10rpx;
+  background: #eeeeee;
+} 
+
+.content {
+  font-family: "Microsoft YaHei";
+  background-color: #F0F0F0;
+  font-size: 25rpx;
+
+}
+
+.item {
+  border: 1px solid #cccccc;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding:12px;
+  border-radius: 5px;
+}
+
+.hr {
+  height: 1px;
+  background-color: #cccccc;
+  opacity: 0.2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.unav {
+  background: #fff;
+  height: 100rpx;
+  padding: 20rpx 0
+}
+
+.navlist {
+  float: left;
+  width: 25%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.navthumb image {
+  width: 40px;
+  height: 40px;
+}
+
+.title {
+  font-size: 40rpx;
+}
+
+/* 特色课程 */
+.utitle {
+  width: 100%;
+  height: 90rpx;
+  text-align: center;
+  background: #fff;
+}
+
+.mtitle {
+  font-size: 35rpx;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10rpx;
+}
+
+.ztitle {
+  font-size: 30rpx;
+  color: #999;
+}
+
+.introduct {
+  width: 100%;
+  background: #fff;
+  padding-bottom: 20rpx;
+  padding-top: 15rpx;
+}
+
+.introduct image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12rpx;
+}
+
+.pleft {
+  float: left;
+  width: 60%;
+  height: 350rpx;
+}
+
+.pright {
+  float: right;
+  width: 38%;
+  height: 350rpx;
+}
+
+.pright .psmall {
+  width: 100%;
+  height: 170rpx;
+}
+
+.ubom10rpx {
+  clear: both;
+  height: 10rpx;
+}
+
+.pbig {
+  clear: both;
+  width: 100%;
+  height: 390rpx;
+}
+
+.inner {
+  width: 96%;
+  margin: 20rpx auto;
+}
+
+.second{
+  margin-top: 10rpx;
+}
+.telicon {
+  width: 120rpx;
+  height: 120rpx;
+  position: fixed;
+  bottom: 80rpx;
+  right: 20rpx;
+}
+
+.telicon image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.block {
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 20rpx;
+  background: #fff;
+  height: auto;
+  overflow: hidden;
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+}
+
+.photo {
+  width:100%;
+  height: auto;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.photo .pro {
+  width: 100%;
+  height: 200rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+}
+.photo .item {
+  width: 300rpx;
+  height: 200rpx;
+  display: inline-block;
+}
+
+.photo .item image {
+  width: 300rpx;
+  height: 200rpx;
+  display: block;
+}
+
+.jszc {
+  height: 40rpx;
+  width: 100%;
+  font-size: 13px;
+  text-align: center;
+  line-height: 40rpx;
+  overflow: hidden;
+  color: #ccc;
+}
+
+.jianjie{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

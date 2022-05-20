@@ -1,0 +1,23 @@
+.section{
+  display: flex;
+}
+textarea{
+  background: #fff;
+  padding: 4px;
+  width:100%;
+  height: 120px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+.page__bd{
+  padding: 15px 15px;
+}
+
+button[type="default"] {
+  color:#fff;
+  background-color:#39c3f2;
+}
+.button-hover[type="default"]{
+  color: rgba(255, 255, 255, 0.6);
+  background-color:rgba(57,195,242,0.6);
+}

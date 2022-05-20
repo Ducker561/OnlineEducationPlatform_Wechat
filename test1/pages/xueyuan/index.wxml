@@ -1,0 +1,29 @@
+<view class="main">
+	<view class="utitle">
+		<view class="mtitle">学员风采</view>
+		<view class="ztitle">student</view>
+	</view>
+	<view class="strengtharea">
+		<view class="inner">
+			<view class="strengthlist" wx:for="{{xueyuan}}" wx:key="">
+				<view class="strengthimg">
+					<image src="{{item.image}}"></image>
+				</view>
+				<view class="strengthinfo">
+					<view class="ilist">
+						{{item.name}}
+						<text class="zhicheng">优秀学员</text>
+					</view>
+					<view class="ilist">
+						<text>培训课程:</text>
+						{{item.job}}
+					</view>
+					<view class="ilist">
+						<text>就职工资:</text>
+						{{item.money}}
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,64 @@
+.container {
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+  }
+  
+  .row button {
+    padding: 0 2rem;
+  }
+  
+  
+  .page__hd {
+    line-height: 42px;
+    padding-left: 15px;
+    background-color: #fff;
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .weui-cell_input {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  
+  .weui-label {
+    font-size: 1rem;
+    width: 90px;
+  }
+  
+  .weui-input {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    margin-top: 6%;
+    padding: 0 4%;
+  }
+  
+  button[type="primary"] {
+    color: #FFFFFF;
+    background-color: #39c3f2;
+    width: 70%;
+  }
+  
+  .button-hover[type="primary"] {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(57, 195, 242, 0.6);
+  }
+  
+  .radio {
+    color: #999999;
+  }
+  
+  .radio radio {
+    margin-left: 2%;
+  }

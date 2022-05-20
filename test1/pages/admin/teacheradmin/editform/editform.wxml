@@ -1,0 +1,92 @@
+<view class="page">
+  <view class="page__hd">修改讲师</view>
+  <form bindsubmit="formSubmit">
+    <view class="page__bd">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">编号:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写编号" name="userid" value="{{teacher.userid}}"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">姓名:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写真实姓名" name="username" value="{{teacher.username}}"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">性别:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写真实性别" name="sex" value="{{teacher.sex}}"/>
+          </view>
+        </view>
+        <!-- <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">性别</view>
+          </view>
+          <view class="weui-cell__bd">
+            <radio-group class="radio-group" bindchange="radioChange">
+              <label class="radio weui-input">
+                男
+                <radio color="#39c3f2" value="男" name="sex" checked="{{item.checked}}" />
+                女
+                <radio color="#39c3f2" value="女" checked="{{item.checked}}" />
+              </label>
+            </radio-group>
+          </view>
+        </view> -->
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">出生年份:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="data" placeholder="请填写出生年份" name="birthyear" value="{{teacher.birthyear}}"/>
+          </view>
+        </view>
+         <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">学历:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="data" placeholder="请填写学历" name="degree" value="{{teacher.degree}}"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">职称:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写职称" name="title" value="{{teacher.title}}"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">入职时间:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写入职时间xxxx-xx-xx" name="grade" value="{{teacher.grade}}"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">所属分类:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写所属分类" name="collegeid" value="{{teacher.collegeid}}"/>
+          </view>
+        </view>
+      </view>
+      <view class="btn">
+        <button class="weui-btn" type="primary" form-type="submit">提交</button>
+        <button class="weui-btn" type="primary" form-type="reset">重置</button>
+      </view>
+    </view>
+  </form>
+</view>

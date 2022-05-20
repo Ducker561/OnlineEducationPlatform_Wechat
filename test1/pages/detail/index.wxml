@@ -1,0 +1,50 @@
+<!-- 课程详细内容 -->
+<view class="main">
+		<view class="topthumb">
+				<image src="{{course.thumb}}" mode="scaleToFill"></image>
+		</view>
+		<view class="inner">
+				<view class="utitle">
+						<view class="liy"></view>
+						<text>{{course.name}}</text>
+				</view>
+				<view class="">
+						<view class="tltarea">
+								<view class="lid"></view>
+								<text>学习费用</text>
+						</view>
+						<view class="ubom10rpx"></view>
+						<view class="urow">
+								<view class="litit" style="background:#ddd">课程</view>
+								<view class="lival" style="background:#ddd">价格</view>
+						</view>
+						<block wx:for-items="{{course.course}}" wx:key="{{item.id}}">
+								<view class="urow">
+										<view class="litit">{{item.name}}</view>
+										<view class="lival">{{item.price}}</view>
+								</view>
+						</block>
+				</view>
+				<view class="ubom10rpx"></view>
+				<view class="">
+						<view class="tltarea">
+								<view class="lid"></view>
+								<text>课程详情</text>
+						</view>
+						<view class="ubom10rpx"></view>
+						<view class="udetail">{{course.detail}}</view>
+				</view>
+				<view class="ubom10rpx"></view>
+				<view class="">
+						<view class="tltarea">
+								<view class="lid"></view>
+								<text>课程特色</text>
+						</view>
+						<view class="ubom10rpx"></view>
+						<view class="udetail">{{course.detail}}</view>
+				</view>
+		</view>
+</view>
+<view class="telicon" bindtap="calling">
+		<image src="/image/tel.png"></image>
+</view>

@@ -1,0 +1,18 @@
+<view class="content">
+  <view class="utitle">
+        <view class="mtitle">师资团队</view>
+        <view class="ztitle">teacher</view>
+    </view> 
+  <view wx:for="{{teacher}}" wx:key="">
+    <navigator url="/pages/teacherlist/teacherlist?id={{item.id}}" hover-class="navigator-hover" class="con-teacher">
+      <view class="con-tr">
+        <image src="{{item.image}}" class="con-trimg"></image>
+      </view>
+      <view class="con-info">
+        <view class="coin-name">{{item.name}}</view>
+        <view class="coin-info">{{item.level}}</view>
+        <view class="coin-info">{{item.style}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>

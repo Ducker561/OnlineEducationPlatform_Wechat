@@ -1,0 +1,24 @@
+<!-- 课程内容 -->
+<view class="page">
+  <view class="item bdbt">
+    <view class="lt">
+      <image src="{{courses.thumb}}"></image>
+    </view>
+    <view class="rt">
+      <view class="name">{{courses.name}}</view>
+      <view class="price">
+        价格：
+        <text class="money">{{courses.money}}</text>
+        元
+      </view>
+      <navigator url="/pages/detail/index?id={{courses.id}}">
+        <view  class="baoming">更多内容</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="title">课程介绍</view>
+  <view class="duanluo">
+    <image  src="{{courses.thumb}}"></image>
+    <text class="content">{{courses.detail}}</text>
+  </view>
+</view>

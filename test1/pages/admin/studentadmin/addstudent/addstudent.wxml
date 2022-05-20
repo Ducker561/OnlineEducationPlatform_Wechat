@@ -1,0 +1,70 @@
+<view class="page">
+  <view class="page__hd">添加学员</view>
+  <form bindsubmit="formSubmit">
+    <view class="page__bd">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">学号:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写学号" name="userid" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">姓名:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写真实姓名" name="username" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">性别:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <radio-group class="radio-group" bindchange="radioChange">
+              <label class="radio weui-input" wx:for="{{items}}" wx:key="">
+                <radio color="#39c3f2" value="{{item.name}}" />
+                {{item.value}}
+              </label>
+            </radio-group>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">出生年份:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker mode="date" value="{{birthyear}}" start="1970-01-01" end="2019-06-01" bindchange="bindDateChange">
+              <view class="weui-input">{{birthyear}}</view>
+            </picker>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">报名时间:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker mode="date" value="{{grade}}" start="1970-01-01" end="2019-06-01" bindchange="bindTimeChange">
+              <view class="weui-input">{{grade}}</view>
+            </picker>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">所属分类:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写所属分类" name="collegeid" />
+          </view>
+        </view>
+      </view>
+      <view class="btn">
+        <button class="weui-btn" type="primary" form-type="submit">添加</button>
+        <button class="weui-btn" type="primary" form-type="reset">重置</button>
+      </view>
+    </view>
+  </form>
+</view>

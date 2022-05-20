@@ -1,0 +1,29 @@
+<!-- 热门课程 -->
+<view class="container">
+    <view class="page">
+        <view class="title" style="float:left;margin-bottom:15px;">热门课程</view>
+        <view class="item bdbt" wx:for="{{courses}}" wx:key="">
+            <navigator url="/pages/coursedetail/index?id={{item.id}}">
+                <view class="lt">
+                    <image src="{{item.thumb}}" />
+                </view>
+                <view class="rt">
+                    <view class="price">{{item.name}}</view>
+                    <view class="name">
+                        价格: ￥
+                        <text class="money">{{item.money}}</text>
+                        元
+                    </view>
+                    <view class="name">
+                        课程类型:
+                        <text class="money">{{item.courseType}}</text>
+                    </view>
+                    <view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
+                        查看课程
+                    </view>
+                </view>
+            </navigator>
+            <view class="line"></view>
+        </view>
+    </view>
+</view>

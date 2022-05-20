@@ -1,0 +1,9 @@
+<!-- 删除成功 -->
+<view class="page">
+  <view class="page__hd"></view>
+   <view class="page__bd">
+    <image src="../../../image/delresult.png" style="width:80px;height:80px;"></image>
+    <view class="">删除成功</view>
+  </view>
+  <view class="page__ft"></view> 
+</view>

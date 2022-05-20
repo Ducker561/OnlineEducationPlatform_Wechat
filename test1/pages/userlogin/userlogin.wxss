@@ -1,0 +1,86 @@
+/* pages/login/login.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.login {
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+
+.login-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1；
+}
+
+.login-wrap {
+  position: absolute;
+  padding: 20rpx 60rpx;
+  z-index: 2;
+  width: 540rpx;
+  left: 50%;
+  top: 40%;
+  box-shadow: 0 10rpx 20rpx 0px #888888;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 16rpx;
+  background-color: #fff;
+}
+
+.title {
+  margin-bottom: 20rpx;
+  font: 16px/2 '微软雅黑';
+  text-align: center;
+}
+
+.inp input {
+  font-size: 14px;
+  height: 80rpx;
+  padding: 0 20rpx;
+  margin-bottom: 20rpx;
+  border: 1rpx solid #e4e4e4;
+  border-radius: 8rpx;
+}
+
+.login-btn {
+  margin: 40rpx 0;
+  text-align: center;
+}
+
+.login-btn button {
+  color: #fff;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-color: #fff;
+  background: #7fabfd;
+}
+
+.login-btn .btn1 {
+  margin-right: 40rpx;
+}
+
+.password-info {
+  font-size: 12px;
+  color: #666;
+  overflow: hidden;
+}
+
+.rember {
+  float: left;
+}
+
+.rember checkbox {
+  transform: scale(0.7) translateY(-15%);
+}
+
+.forget {
+  float: right;
+}
+
+.forget:hover {
+  color: #df0606;
+}

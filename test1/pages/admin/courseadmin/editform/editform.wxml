@@ -1,0 +1,86 @@
+<view class="page">
+  <view class="page__hd">修改课程</view>
+  <form bindsubmit="formSubmit">
+    <view class="page__bd">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">课程号:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input readonly="readonly" type="number" class="weui-input" placeholder="请填写课程号" name="courseid" value="{{courseid}}"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">课程名称:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写课程名称" name="coursename" value="{{courselist.coursename}}"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">讲师编号:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写讲师编号" name="teacherid" value="{{courselist.teacherid}}"/>
+          </view>
+        </view>
+       
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">上课时间:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="data" placeholder="请填写上课时间" name="coursetime" value="{{courselist.coursetime}}"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">上课地点:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="text" placeholder="请填写上课地点" name="classroom" value="{{courselist.classroom}}"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">周数:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写周数" name="courseweek" value="{{courselist.courseweek}}"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">课程类型:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写课程类型" name="coursetype" value="{{courselist.coursetype}}"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">所属分类:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写所属分类" name="collegeid" value="{{courselist.collegeid}}"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">周节数:</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请填写学分" name="score" value="{{courselist.score}}"/>
+          </view>
+        </view>
+      </view>
+      <view class="btn">
+        <button class="weui-btn" type="primary" form-type="submit">提交</button>
+        <button class="weui-btn" type="primary" form-type="reset">重置</button>
+      </view>
+    </view>
+  </form>
+</view>

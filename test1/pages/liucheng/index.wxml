@@ -1,0 +1,29 @@
+<view>
+    <view class="block-title">
+        <text class="title"><text class="col">六</text>大服务,<text class="col">成</text>就精英</text>
+    </view>
+    <view class="service-list">
+        <view class="service-item" wx:for="{{serviceList}}" wx:key="">
+            <image src="{{item.icon}}"></image>
+            <text>{{item.title}}</text>
+        </view>
+    </view>
+    <view class="dingzhi">
+        <view class="block-title">
+        <text class="title">报名流程</text>
+    </view>
+        <view class="flow-process">
+            <block wx:for="{{flowProcessList}}" wx:key="">
+                <view class="flow-process-item">
+                    <view class="flow-process-con">
+                        <text class="flow-process-index">{{index+1}}</text>
+                        <text class="flow-process-title">{{item}}</text>
+                    </view>
+                </view>
+                <view  wx:if="{{index < flowProcessList.length-1}}">
+                    <image class="flow-process-arrow" src="{{arrow}}"></image>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

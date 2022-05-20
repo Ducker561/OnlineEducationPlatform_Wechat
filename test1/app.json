@@ -1,0 +1,93 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userlogin/userlogin",
+    "pages/admin/admin/index",
+    "pages/userregist/userregist",
+    "pages/admin/passwordreset/passwordreset",
+    "pages/forget/forget",
+    "pages/example/fdback/fdback",
+    "pages/zixundetail/detail",
+    "pages/zixun/zixun",
+    "pages/admin/showuser/showuser",
+    "pages/admin/success/delresult",
+    "pages/admin/none/none",
+    "pages/admin/teacheradmin/addteacher/addteacher",
+    "pages/admin/teacheradmin/editteacher/editteacher",
+    "pages/admin/teacheradmin/editform/editform",
+    "pages/admin/teacheradmin/deleteteacher/deleteteacher",
+    "pages/admin/courseadmin/editcourse/editcourse",
+    "pages/admin/courseadmin/editform/editform",
+    "pages/admin/courseadmin/addcourse/addcourse",
+    "pages/admin/studentadmin/deletestudent/deletestudent",
+    "pages/admin/studentadmin/addstudent/addstudent",
+    "pages/admin/studentadmin/editstudent/editstudent",
+    "pages/admin/studentadmin/editform/editform",
+    "pages/admin/courseadmin/deletecourse/deletecourse",
+    "pages/action/action",
+    "pages/asset/index",
+    "pages/coursedetail/index",
+    "pages/detail/index",
+    "pages/score/index",
+    "pages/recharge/index",
+    "pages/teacher/teacher",
+    "pages/teacherlist/teacherlist",
+    "pages/course/course",
+    "pages/mine/mine",
+    "pages/example/collect/collect",
+    "pages/example/sign/index",
+    "pages/example/coupons/index",
+    "pages/example/contact/index",
+    "pages/example/order/order",
+    "pages/xueyuan/index",
+    "pages/liucheng/index",
+    "pages/about/about",
+    "pages/caculate/index",
+    "pages/search/search",
+    "pages/Comment/comment"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#99ffc0",
+    "navigationBarTitleText": "培训机构",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#99ffc0",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#99ffc0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/index1.png",
+        "selectedIconPath": "image/index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/Comment/comment",
+        "text": "学习圈",
+        "iconPath": "image/quan.png",
+        "selectedIconPath": "image/quan1.png"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "课程",
+        "iconPath": "image/course.png",
+        "selectedIconPath": "image/course1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "image/mine_not.png",
+        "selectedIconPath": "image/mine(2).png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

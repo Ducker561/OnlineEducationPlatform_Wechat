@@ -1,0 +1,126 @@
+/* pages/index/searchResult.wxss */
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.blank{
+  display: flex;
+  background-color: white;
+  padding: 50rpx;
+  justify-content: center;
+}
+
+.content>view{
+  background-color: white;
+}
+
+.subtitle{
+  background-color: white;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  color: grey;
+  font-size: 30rpx;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right:100rpx;
+}
+
+.top .favor,
+.top .share{
+  color: #d69abd;
+  font-size:50rpx;
+  margin-left:30rpx;
+}
+
+/* ========== */
+/* word-intro */
+/* ========== */
+.word-intro{
+  display: flex;
+  padding: 20rpx;
+  flex-direction: row;
+  align-items: center;
+}
+.matts{
+  position: absolute;
+  left: 40rpx;
+  top:40rpx;
+  height: 120rpx;
+  width: 120rpx;
+  z-index: 0;
+}
+
+.word{
+  position: relative;
+  margin: 20rpx;
+  height: 120rpx;
+  width:120rpx;
+  font-size: 60rpx;
+  /* 居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pronunciation{
+  font-size: 30rpx; 
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.pronList{
+  display: flex;
+}
+
+.pronList text{
+  margin: 0 10rpx;
+}
+
+/* ================= */
+/* word-explaination */
+/* ================= */
+.word-explaination{
+  display: flex;
+  flex-direction: column;
+  padding: 50rpx;
+  border-top: solid 1 grey;
+}
+.one-explaination{
+  display: flex;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+.one-explaination .word-tag{
+  margin-right: 40rpx; 
+}
+
+/* ============= */
+/* word-examples */
+/* ============= */
+
+.word-examples{
+  display: flex;
+  flex-direction: column;
+  padding: 50rpx;
+}
+.one-sentense{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50rpx;
+}
+.one-sentense>text{
+  font-size: 30rpx;
+}
+
+.sentence{
+  display: flex;
+  justify-content: flex-end;
+}

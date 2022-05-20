@@ -1,0 +1,117 @@
+.container {
+    background-color: #f2f2f2;
+}
+
+.page {
+    width: 96%;
+    height: auto;
+    background: #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20rpx;
+}
+
+.title {
+    font-size: 18px;
+    color: #000;
+}
+
+.line {
+    height: 1rpx;
+    background: #f2f2f2;
+}
+
+.btn {
+    background: #7fabfd;
+}
+
+.item {
+    height: 200rpx;
+    margin-top: 20rpx;
+    overflow: hidden;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.item .lt {
+    float: left;
+    width: 200rpx;
+}
+
+.item .lt image {
+    width: 180rpx;
+    height: 160rpx;
+    margin-top: 20rpx;
+    margin-left: 10rpx;
+}
+
+.item .rt .name {
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 26rpx;
+}
+
+.item .rt .xinghao {
+    line-height: 40rpx;
+    height: 40rpx;
+}
+
+.item .rt {
+    float: left;
+    width: 480rpx;
+    height: 180rpx;
+    margin-top: 20rpx;
+    position: relative;
+}
+
+.baoming {
+    height: 50rpx;
+    width: 140rpx;
+    position: absolute;
+    right: 10rpx;
+    bottom: 10rpx;
+    line-height: 50rpx;
+    text-align: center;
+    border-radius: 20rpx;
+    font-size: 26rpx;
+}
+
+.item .rt .price {
+    line-height: 40rpx;
+    height: 40rpx;
+}
+
+.price .money {
+    color: red;
+    font-weight: bold;
+    font-size: 26rpx;
+}
+
+.search {
+    width: 80%;
+    height: 60rpx;
+    background: #fff;
+    border-radius: 20rpx;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 30rpx;
+}
+
+.search button {
+    float: right;
+    width: 30%;
+    border: 0;
+    height: 62rpx;
+    font-size: 24rpx;
+    line-height: 62rpx;
+    color: #fff;
+}
+
+.search input {
+    width: 60%;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 24rpx;
+    margin-left: 5%;
+    float: left;
+}

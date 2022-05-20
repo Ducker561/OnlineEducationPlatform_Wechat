@@ -1,0 +1,14 @@
+.page__bd{
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  margin-top: 50%;
+  color: #aaaaaa;
+}
+.page__bd image{
+  display: inline-block;
+  margin: 0 auto;
+}

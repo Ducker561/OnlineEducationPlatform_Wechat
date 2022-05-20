@@ -1,0 +1,31 @@
+/* pages/index/search.wxss */
+.search-top{
+  background-color: #d69abd;
+  padding-right: 30rpx;
+}
+
+.search-bottom{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.history-list .content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.history-bottom .content{
+  display: flex;
+  justify-content: center;
+}
+
+.history-bottom .content .history-icon{
+  font-size: 36rpx;
+  margin-right: 20rpx;
+}
+.search-list{
+  border-bottom: grey 1px solid;
+}
