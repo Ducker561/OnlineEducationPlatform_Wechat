@@ -36,7 +36,7 @@ public class getUserLoginServlet extends HttpServlet {
         //获取微信小程序get的参数值并打印
         String code = request.getParameter("code");
 
-        String url = "https://api.weixin.qq.com/sns/jscode2session?appid=wxc44b15b1835875b9&secret=2e3b637edcdeed9e0de89fe9f71f7adc" +
+        String url = "https://api.weixin.qq.com/sns/jscode2session?appid=your_appid&secret=your_appsecret" +
                 "&js_code="+code+"&grant_type=authorization_code";
 
         URL obj = new URL(url);
