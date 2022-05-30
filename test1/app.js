@@ -53,6 +53,7 @@ App({
   },
   globalData:{
     userInfo:null,
-    username:null
+    username:null,
+    role:null
   }
 })

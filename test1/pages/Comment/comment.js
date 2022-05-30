@@ -34,8 +34,23 @@ Page({
     emojis: [], //qq、微信原始表情
     alipayEmoji: [], //支付宝表情
   },
- 
+  onShow: function(){
+    console.log("onshow");
+    if(app.globalData.role!=1){
+      console.log("不是1");
+      wx.switchTab({
+        url: '../mine/mine',
+      })
+    }
+  },
   onLoad: function() {
+    console.log("onload");
+    if(app.globalData.role!=1){
+      console.log("不是1");
+      wx.switchTab({
+        url: '../mine/mine',
+      })
+    }
     var em = {},
       that = this,
       emChar = that.data.emojiChar.split("-");

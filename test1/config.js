@@ -1,4 +1,4 @@
-module.exports.telphone = "4000100002";
+module.exports.telphone = "+86 13912345678";
 module.exports.zixun = [{
 		"id": 1,
 		"img": "/image/zixun1.jpg",

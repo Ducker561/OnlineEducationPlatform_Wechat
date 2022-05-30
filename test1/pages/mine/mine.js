@@ -95,6 +95,7 @@ Page({
                     balance: res.data[0].muchMoney,
                     score: res.data[0].points
                   })
+                  app.globalData.role=res.data[0].role;
                 }
               })
             }

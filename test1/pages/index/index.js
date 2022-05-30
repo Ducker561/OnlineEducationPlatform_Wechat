@@ -43,7 +43,7 @@ Page({
      {
       url: '/pages/xueyuan/index',
       image: '/image/xy.png',
-      text: '团队'
+      text: '学员风采'
     }, 
     {
       url: '/pages/about/about',

@@ -15,7 +15,7 @@ Page({
   },
   calling: function () {
     wx.makePhoneCall({
-      phoneNumber: '012-888888', 
+      phoneNumber: '+86 13912345678', 
     })
   },
   onLoad: function (options) {
